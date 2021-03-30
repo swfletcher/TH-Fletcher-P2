@@ -1,0 +1,238 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*Universal*/
+
+html {
+	font-family: 'Didact Gothic', sans-serif;
+}
+
+p {
+	text-align: center;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+/*Universal-End*/
+
+/*Navigation and Name*/
+h1 {
+	text-align: center;
+}
+
+ul{
+	margin-bottom: 20px;
+}
+
+li {
+	list-style-type: none;
+	margin-left: -40px;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+}
+
+li a {
+	
+	text-decoration: none;
+	color: black;
+	font-weight: 600;
+}
+
+.signature {
+	
+	margin-bottom: 2em;
+	margin-top: 5em;
+}
+
+.signature p {
+	text-decoration: none;
+	color: black;
+	margin-top: auto;
+	margin-bottom: auto;
+
+}
+
+/*Navigation and Name-End*/
+
+/*Main*/
+
+.intro-p{
+	margin-bottom: 5rem;
+	
+}
+
+.profile-img {
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	display: block;
+
+}
+
+h2, h3 {
+	text-align: center;
+}
+
+h2 {
+	font-size: 18px;
+}
+
+h3{
+	font-size: 24px;
+}
+
+img {
+	
+	width: 100%;
+	height: auto;
+	object-fit: cover; 
+	margin-top: 3em;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+
+/*Main-End*/
+
+/*Footer*/
+
+footer {
+	text-align: center;
+	margin-top: 5em;
+	
+}
+
+.contact, .contact a {
+	text-decoration: none;
+	font-size: .9em;
+	color: black;
+
+}
+
+.contact a{
+	font-weight: 600;
+}
+
+.signature {
+	display: flex;
+	justify-content: space-between;
+	margin-left: 5px;
+	margin-right: 5px;
+		
+}
+
+.signature p {
+	font-size: 18px;
+	font-weight: 600;
+	
+}
+
+.signature p a {
+	color: black;
+	text-decoration: none;
+}
+
+.bottom-nav {
+	display: none;
+}
+
+/*Breakpoint iPad*/
+@media screen and (min-width: 768px) {
+    
+	p{
+		font-size: 1.1em;
+	}
+	
+	ul {
+		display: flex;
+		justify-content: center;
+	}
+	
+	li {
+		margin: 0px 2.2rem;
+	}
+	
+	.intro-container {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: center;
+		align-content: flex-start;
+		padding-left: 8%;
+		padding-right: 8%;
+		margin-bottom: 6em;
+	}
+	
+	.profile-img, .intro-p{
+		margin-top: 15px;
+	}
+	
+	.profile-img{
+		width: 40%;
+	}
+	
+	.intro-p {
+		width: 60%;
+		text-align: left;
+	}
+	.contact, .contact a {
+		font-size: 1em;
+		
+	}
+	
+	.signature {
+		
+		margin-left: 35.2px;
+	}
+	
+	.return-home {
+		display: none;
+	}
+
+	.bottom-nav {
+	    display: inline-flex;
+}
+
+	.container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding-left: 8%;
+		padding-right: 8%;
+	}
+	
+	.container div {
+		width: 49%;
+	}
+		
+	
+	.outro {
+		
+		padding-left: 15%;
+		padding-right: 15%;
+		margin-top: 45px;
+		margin-bottom: 45px;
+			
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	
+	.container div {
+		width: 32%;
+	}
+	
+	.outro {
+
+		padding-left: 28%;
+		padding-right: 28%;
+			
+	}
+	
+}
